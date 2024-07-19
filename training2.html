@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive App Simulation</title>
+    <style>
+        .app-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cord-bonobo-274.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F71556ba7-8119-4e9e-bf95-3fe28775238b%2F4f313c61-cc3f-49bc-a0bb-f906073e9840%2FMain_Menu.png?table=block&id=cab7fd78-5e8a-4739-9606-1467eea152b4&spaceId=71556ba7-8119-4e9e-bf95-3fe28775238b&width=710&userId=&cache=v2" alt="App Screenshot 1" class="app-image" usemap="#screenshot1-map">
+    
+    <map name="screenshot1-map">
+        <area shape="rect" coords="0,0,500,500" alt="Option 1" onclick="showImage('https://cord-bonobo-274.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F71556ba7-8119-4e9e-bf95-3fe28775238b%2F34dd846c-5fad-4400-b0da-025122c70397%2FScreenshot_20240719-213735.png?table=block&id=fd09db5a-6b97-462c-86b5-210d4a516579&spaceId=71556ba7-8119-4e9e-bf95-3fe28775238b&width=1420&userId=&cache=v2')">
+        <!-- Add more areas as needed -->
+    </map>
+
+    <script>
+        function showImage(imageSrc) {
+            document.querySelector('.app-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
